@@ -3,17 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>BiLingo - Latihan</title>
-  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <h1>Translate this:</h1>
     <div id="question">Loading...</div>
-    <input type="text" id="answer" placeholder="Tulis terjemahanmu">
-    <button onclick="checkAnswer()">Periksa</button>
-    <div id="result"></div>
+
+    <input type="text" id="answer" placeholder="Tulis terjemahanmu" />
+
+    <div style="margin-top: 10px">
+      <button onclick="checkAnswer()">Periksa</button>
+      <button onclick="loadRandomQuestion()">Next</button>
+    </div>
+
+    <div id="result" style="margin-top: 20px; font-weight: bold"></div>
+    <div class="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+    <p id="progress-label">Progress: 0.00%</p>
+
   </div>
   <script src="latihan.js"></script>
   
 </body>
 </html>
+
+
+
